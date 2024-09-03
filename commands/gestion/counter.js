@@ -257,7 +257,7 @@ module.exports = {
 									}]
 								}).then(c => {
 									c.setPosition(0)
-									c.guild.channels.create(`💎・Membres: ${message.guild.memberCount}`, {
+									c.guild.channels.create(`💎・Members: ${message.guild.memberCount}`, {
 										type: 'voice',
 										parent: c.id,
 										permissionOverwrites: [{
@@ -267,7 +267,7 @@ module.exports = {
 										}, ],
 									}).then(total => {
 										db.set(`member_${message.guild.id}`, total.id)
-										c.guild.channels.create(`🌟・En ligne: ${message.guild.members.cache.filter(m => m.user.presence.status !== 'offline').size}`, {
+										c.guild.channels.create(`🌟・Online: ${message.guild.members.cache.filter(m => m.user.presence.status !== 'offline').size}`, {
 											type: 'voice',
 											parent: c.id,
 											permissionOverwrites: [{
@@ -278,7 +278,7 @@ module.exports = {
 										}).then(online => {
 											db.set(`online_${message.guild.id}`, online.id)
 
-											c.guild.channels.create(`🎧・En vocal: ${message.guild.members.cache.filter(m => m.voice.channel).size}`, {
+											c.guild.channels.create(`🎧・In VC: ${message.guild.members.cache.filter(m => m.voice.channel).size}`, {
 												type: 'voice',
 												parent: c.id,
 												permissionOverwrites: [{
@@ -289,7 +289,7 @@ module.exports = {
 											}).then(vocal => {
 												db.set(`vocal_${message.guild.id}`, vocal.id)
 
-												c.guild.channels.create(`🔮・Boost: ${message.guild.premiumSubscriptionCount}`, {
+												c.guild.channels.create(`🔮・Boosts: ${message.guild.premiumSubscriptionCount}`, {
 													type: 'voice',
 													parent: c.id,
 													permissionOverwrites: [{
