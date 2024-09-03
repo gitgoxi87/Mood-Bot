@@ -339,7 +339,7 @@ module.exports = {
 														cld2.first().delete()
 														mp.delete()
 														cld.first().delete()
-														role.setName(`💎・Membres: ${message.guild.memberCount}`)
+														role.setName(`💎・Members: ${message.guild.memberCount}`)
 														updateembed(m)
 													} else {
 														db.set(`memberformat_${message.guild.id}`, cld2.first().content)
@@ -389,7 +389,7 @@ module.exports = {
 														cld2.first().delete()
 														mp.delete()
 														cld.first().delete()
-														role.setName(`🌟・En ligne: ${message.guild.members.cache.filter(m => m.user.presence.status !== 'offline').size}`)
+														role.setName(`🌟・Online: ${message.guild.members.cache.filter(m => m.user.presence.status !== 'offline').size}`)
 														updateembed(m)
 													} else {
 														db.set(`onlineformat_${message.guild.id}`, cld2.first().content)
@@ -439,7 +439,7 @@ module.exports = {
 														cld2.first().delete()
 														mp.delete()
 														cld.first().delete()
-														role.setName(`🎧・En vocal: ${message.guild.members.cache.filter(m => m.voice.channel).size}`)
+														role.setName(`🎧・In VC: ${message.guild.members.cache.filter(m => m.voice.channel).size}`)
 														updateembed(m)
 													} else {
 														db.set(`vocalformat_${message.guild.id}`, cld2.first().content)
@@ -489,7 +489,7 @@ module.exports = {
 														cld2.first().delete()
 														mp.delete()
 														cld.first().delete()
-														role.setName(`🔮・Boost: ${message.guild.premiumSubscriptionCount}`)
+														role.setName(`🔮・Boosts: ${message.guild.premiumSubscriptionCount}`)
 														updateembed(m)
 													} else {
 														db.set(`boostformat_${message.guild.id}`, cld2.first().content)
