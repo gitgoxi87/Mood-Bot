@@ -6,8 +6,8 @@
     "defaultleavemessage": "{user} vient de quitter. Il avais été invité par **{inviter:name}** qui a désormais **{invite} invitations** ",
     "defaultLevelmessage": "**{user}** vient de passer au level **{level}** bravo à lui !",
     "owner": [
-        "399402184023867404", 
-        "836388976171810887",
-        "775003587930488832"
+        "836388976171810887", 
+        "775003587930488832",
+        ""
     ]
 }
