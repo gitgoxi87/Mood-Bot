@@ -19,22 +19,22 @@ module.exports = {
 			const public = new Discord.MessageEmbed()
 				.setColor(color)
 				.setFooter(`Prefix : ${prefix} • ${client.config.name}`)
-				.setTitle("Liste des commandes par permissions")
+				.setTitle("List of commands by permissions")
 				.setTimestamp()
 				.setDescription(`
 
 **__Public__**
-- \`${client.config.prefix}banner [membre]\`
-- \`${client.config.prefix}invite [membre]\`
+- \`${client.config.prefix}banner [member]\`
+- \`${client.config.prefix}invite [member]\`
 - \`${client.config.prefix}support\`
-- \`${client.config.prefix}pic [membre]\`
+- \`${client.config.prefix}pic [member]\`
 - \`${client.config.prefix}snipe\`
 - \`${client.config.prefix}ping\`
 - \`${client.config.prefix}serverinfo [guild\`
 - \`${client.config.prefix}userinfo [user]\`
 - \`${client.config.prefix}top [rank]\`
 - \`${client.config.prefix}help\`
-- \`${client.config.prefix}channelinfo [sallon]\`
+- \`${client.config.prefix}channelinfo [channel]\`
 `)
 
 			let perm = ""
@@ -48,58 +48,58 @@ module.exports = {
 				const mods = new Discord.MessageEmbed()
 					.setColor(color)
 					.setFooter(`Prefix : ${prefix} • ${client.config.name}`)
-					.setTitle("Liste des commandes par permissions")
+					.setTitle("List of commands by permissions")
 					.setTimestamp()
-					.setDescription(`*Les commandes Public sont aussi disponible pour la permissions Mods*
+					.setDescription(`*Public commands are also available for Mods permissions*
                 
 **__Perm Mods__**
-- \`${client.config.prefix}mute <membre> [temps/raison]\`
+- \`${client.config.prefix}mute <member> [time/reason]\`
 - \`${client.config.prefix}mutelist\`
-- \`${client.config.prefix}unmute <membre>\`
+- \`${client.config.prefix}unmute <member>\`
 - \`${client.config.prefix}warn [add/remove/clear/list]\`
 `)
 
 				const admin = new Discord.MessageEmbed()
 					.setColor(color)
 					.setFooter(`Prefix : ${prefix} • ${client.config.name}`)
-					.setTitle("Liste des commandes par permissions")
+					.setTitle("List of commands by permissions")
 					.setTimestamp()
-					.setDescription(`*Les commandes disponible pour les permissions Mods sont aussi disponible pour la permissions Admin*
+					.setDescription(`*The commands available for Mods permissions are also available for Admin permissions*
                 
 **__Perm Admin__**
 - \`${client.config.prefix}alladmin\`
 - \`${client.config.prefix}allbot\`
 - \`${client.config.prefix}allbotadmin\`
-- \`${client.config.prefix}ban <membre> [raison]\`
-- \`${client.config.prefix}unban <membreID>\`
+- \`${client.config.prefix}ban <member> [reason]\`
+- \`${client.config.prefix}unban <memberID>\`
 - \`${client.config.prefix}banlist\`
-- \`${client.config.prefix}kick <membre> [raison]\`
+- \`${client.config.prefix}kick <member> [reason]\`
 `)
 
 				const owner = new Discord.MessageEmbed()
 					.setColor(color)
 					.setFooter(`Prefix : ${prefix} • ${client.config.name}`)
-					.setTitle("Liste des commandes par permissions")
+					.setTitle("List of commands by permissions")
 					.setTimestamp()
-					.setDescription(`*Les commandes disponible pour les permissions Admin sont aussi disponible pour la permissions Owner*
+					.setDescription(`*The commands available for Admin permissions are also available for Owner permissions*
                 
 ** __Perm Owner__**
-- \`${client.config.prefix}lock [salon/all]\`
-- \`${client.config.prefix}renew [salon/all]\`
-- \`${client.config.prefix}unlock [salon/all]\`
-- \`${client.config.prefix}clear [membre/message]\`
+- \`${client.config.prefix}lock [channel/all]\`
+- \`${client.config.prefix}renew [channel/all]\`
+- \`${client.config.prefix}unlock [channel/all]\`
+- \`${client.config.prefix}clear [member/message]\`
 `)
 
 				const owner2 = new Discord.MessageEmbed()
 					.setColor(color)
 					.setFooter(`Prefix : ${prefix} • ${client.config.name}`)
-					.setTitle("Liste des commandes par permissions")
+					.setTitle("List of commands by permissions")
 					.setTimestamp()
-					.setDescription(`*Les commandes disponible pour toute les permissions sont aussi disponible pour les personnes étant owner du bot*
+					.setDescription(`*The commands available for all permissions are also available for people who own the bot*
                 
 **__Owner Discord__** (*seulement owner discord bot, non config*)
-- \`${client.config.prefix}perm [clear/set/del <perm> <rôle>]\` 
-- \`${client.config.prefix}massrole <add/remove> <rôle>\`
+- \`${client.config.prefix}perm [clear/set/del <perm> <role>]\` 
+- \`${client.config.prefix}massrole <add/remove> <role>\`
 - \`${client.config.prefix}logs\`
 - \`${client.config.prefix}levels\`
 - \`${client.config.prefix}leave\`
@@ -115,7 +115,7 @@ module.exports = {
 - \`${client.config.prefix}tempvoc\`
 - \`${client.config.prefix}welcome\`
 - \`${client.config.prefix}theme <color>\`
-- \`${client.config.prefix}public <add/clear/list/remove> <add/remove: salon>\`
+- \`${client.config.prefix}public <add/clear/list/remove> <add/remove: channel>\`
 - \`${client.config.prefix}unlock all\`
 `)
 					.setFooter(`Prefix : ${prefix} • ${client.config.name}`)
