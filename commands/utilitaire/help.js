@@ -19,22 +19,21 @@ module.exports = {
 			const public = new Discord.MessageEmbed()
 				.setColor(color)
 				.setFooter(`Prefix : ${prefix} • ${client.config.name}`)
-				.setTitle("List of commands by permissions")
+				.setTitle("Liste des commandes par permissions")
 				.setTimestamp()
 				.setDescription(`
-
 **__Public__**
-- \`${client.config.prefix}banner [member]\`
-- \`${client.config.prefix}invite [member]\`
+- \`${client.config.prefix}banner [membre]\`
+- \`${client.config.prefix}invite [membre]\`
 - \`${client.config.prefix}support\`
-- \`${client.config.prefix}pic [member]\`
+- \`${client.config.prefix}pic [membre]\`
 - \`${client.config.prefix}snipe\`
 - \`${client.config.prefix}ping\`
-- \`${client.config.prefix}serverinfo [guild\`
+- \`${client.config.prefix}serverinfo [guild]\`
 - \`${client.config.prefix}userinfo [user]\`
 - \`${client.config.prefix}top [rank]\`
 - \`${client.config.prefix}help\`
-- \`${client.config.prefix}channelinfo [channel]\`
+- \`${client.config.prefix}channelinfo [sallon]\`
 `)
 
 			let perm = ""
@@ -48,58 +47,58 @@ module.exports = {
 				const mods = new Discord.MessageEmbed()
 					.setColor(color)
 					.setFooter(`Prefix : ${prefix} • ${client.config.name}`)
-					.setTitle("List of commands by permissions")
+					.setTitle("Liste des commandes par permissions")
 					.setTimestamp()
-					.setDescription(`*Public commands are also available for Mods permissions*
+					.setDescription(`*Les commandes Public sont aussi disponible pour la permissions Mods*
                 
 **__Perm Mods__**
-- \`${client.config.prefix}mute <member> [time/reason]\`
+- \`${client.config.prefix}mute <membre> [temps/raison]\`
 - \`${client.config.prefix}mutelist\`
-- \`${client.config.prefix}unmute <member>\`
+- \`${client.config.prefix}unmute <membre>\`
 - \`${client.config.prefix}warn [add/remove/clear/list]\`
 `)
 
 				const admin = new Discord.MessageEmbed()
 					.setColor(color)
 					.setFooter(`Prefix : ${prefix} • ${client.config.name}`)
-					.setTitle("List of commands by permissions")
+					.setTitle("Liste des commandes par permissions")
 					.setTimestamp()
-					.setDescription(`*The commands available for Mods permissions are also available for Admin permissions*
+					.setDescription(`*Les commandes disponible pour les permissions Mods sont aussi disponible pour la permissions Admin*
                 
 **__Perm Admin__**
 - \`${client.config.prefix}alladmin\`
 - \`${client.config.prefix}allbot\`
 - \`${client.config.prefix}allbotadmin\`
-- \`${client.config.prefix}ban <member> [reason]\`
-- \`${client.config.prefix}unban <memberID>\`
+- \`${client.config.prefix}ban <membre> [raison]\`
+- \`${client.config.prefix}unban <membreID>\`
 - \`${client.config.prefix}banlist\`
-- \`${client.config.prefix}kick <member> [reason]\`
+- \`${client.config.prefix}kick <membre> [raison]\`
 `)
 
 				const owner = new Discord.MessageEmbed()
 					.setColor(color)
 					.setFooter(`Prefix : ${prefix} • ${client.config.name}`)
-					.setTitle("List of commands by permissions")
+					.setTitle("Liste des commandes par permissions")
 					.setTimestamp()
-					.setDescription(`*The commands available for Admin permissions are also available for Owner permissions*
+					.setDescription(`*Les commandes disponible pour les permissions Admin sont aussi disponible pour la permissions Owner*
                 
 ** __Perm Owner__**
-- \`${client.config.prefix}lock [channel/all]\`
-- \`${client.config.prefix}renew [channel/all]\`
-- \`${client.config.prefix}unlock [channel/all]\`
-- \`${client.config.prefix}clear [member/message]\`
+- \`${client.config.prefix}lock [salon/all]\`
+- \`${client.config.prefix}renew [salon/all]\`
+- \`${client.config.prefix}unlock [salon/all]\`
+- \`${client.config.prefix}clear [membre/message]\`
 `)
 
 				const owner2 = new Discord.MessageEmbed()
 					.setColor(color)
 					.setFooter(`Prefix : ${prefix} • ${client.config.name}`)
-					.setTitle("List of commands by permissions")
+					.setTitle("Liste des commandes par permissions")
 					.setTimestamp()
-					.setDescription(`*The commands available for all permissions are also available for people who own the bot*
+					.setDescription(`*Les commandes disponible pour toute les permissions sont aussi disponible pour les personnes étant owner du bot*
                 
 **__Owner Discord__** (*seulement owner discord bot, non config*)
-- \`${client.config.prefix}perm [clear/set/del <perm> <role>]\` 
-- \`${client.config.prefix}massrole <add/remove> <role>\`
+- \`${client.config.prefix}perm [clear/set/del <perm> <rôle>]\` 
+- \`${client.config.prefix}massrole <add/remove> <rôle>\`
 - \`${client.config.prefix}logs\`
 - \`${client.config.prefix}levels\`
 - \`${client.config.prefix}leave\`
@@ -115,7 +114,7 @@ module.exports = {
 - \`${client.config.prefix}tempvoc\`
 - \`${client.config.prefix}welcome\`
 - \`${client.config.prefix}theme <color>\`
-- \`${client.config.prefix}public <add/clear/list/remove> <add/remove: channel>\`
+- \`${client.config.prefix}public <add/clear/list/remove> <add/remove: salon>\`
 - \`${client.config.prefix}unlock all\`
 `)
 					.setFooter(`Prefix : ${prefix} • ${client.config.name}`)
@@ -143,7 +142,7 @@ module.exports = {
 			util.setFooter(`Prefix : ${prefix} • ${client.config.name}`)
 			util.setTitle("Utilitaire")
 			util.setTimestamp()
-			util.setDescription("*Les paramètres entre **`<>`** sont obligatoire, alors que les paramètres entre **`[]`** eux sont facultatifs*")
+			util.setDescription("*Les paramètres entre **`<...>`** sont obligatoire, alors que les paramètres entre **`[...]`** eux sont facultatifs*")
 				if (2 <= perm) util.addField(`\`${prefix}alladmin\``, "Permet de voir tout les administrateurs présents sur le serveur")
 				if (2 <= perm) util.addField(`\`${prefix}allbot\``, "Permet de voir tout les bots présents sur le serveur")
 				if (2 <= perm) util.addField(`\`${prefix}allbotadmin\``, "Permet de voir tout les bots administrateurs présents sur le serveur")
@@ -153,7 +152,6 @@ module.exports = {
 				if (1 <= perm) util.addField(`\`${prefix}help all\``, "Permet de voir les commandes du bot via les permissions")
 			util.addField(`\`${prefix}invite [membre]\``, "Permet de voir le nombre d'invtations que possède un utilisateur")
 			util.addField(`\`${prefix}pic [membre]\``, "Permet de voir la photo de profil d'un utilisateur")
-
 			util.addField(`\`${prefix}ping\``, "Permet de voir la latence du bot et du websocket en ms")
 				if (2 <= perm) util.addField(`\`${prefix}roleinfo <rôle>\``, "Permet de d'avoir des informations sur un rôle")
 			util.addField(`\`${prefix}serverinfo [guild]\``, "Permet de d'avoir des informations sur un serveur où ce trouve le bot")
@@ -169,7 +167,7 @@ module.exports = {
 			mods.setFooter(`Prefix : ${prefix} • ${client.config.name}`)
 			mods.setTitle("Modération")
 			mods.setTimestamp()
-			mods.setDescription("*Les paramètres entre **`<>`** sont obligatoire, alors que les paramètres entre **`[]`** eux sont facultatifs*")
+			mods.setDescription("*Les paramètres entre **`<...>`** sont obligatoire, alors que les paramètres entre **`[...]`** eux sont facultatifs*")
 			if (4 <= perm) mods.addField(`\`${prefix}addrole <membre> <rôle>\` (*Seulement les rôles sans permissions dangereuse*)`, "Permet de donner un rôle à un membre sur le serveur")
 			if (2 <= perm) mods.addField(`\`${prefix}ban <membre> [raison]\``, "Permet de bannir un membre du serveur")
 			if (2 <= perm) mods.addField(`\`${prefix}banlist\``, "Permet de voir tout les membres bannis sur le serveur")
@@ -197,7 +195,7 @@ module.exports = {
 			gestion.setFooter(`Prefix : ${prefix} • ${client.config.name}`)
 			gestion.setTitle("Serveur Gestion")
 			gestion.setTimestamp()
-			gestion.setDescription("*Les paramètres entre **`<>`** sont obligatoire, alors que les paramètres entre **`[]`** eux sont facultatifs*")
+			gestion.setDescription("*Les paramètres entre **`<...>`** sont obligatoire, alors que les paramètres entre **`[...]`** eux sont facultatifs*")
 			if (5 <= perm) gestion.addField(`\`${prefix}antiraid\``, "Permet de gérer les modules d'antiraid sur le serveur")
 			if (4 <= perm) gestion.addField(`\`${prefix}counter\``, "Permet de gérer les compteurs personnalisés sur le serveur")
 			if (4 <= perm) gestion.addField(`\`${prefix}embed\``, "Permet de crée un embed personalisé")
@@ -224,7 +222,7 @@ module.exports = {
 			bot.setFooter(`Prefix : ${prefix} • ${client.config.name}`)
 			bot.setTitle("Bot")
 			bot.setTimestamp()
-			bot.setDescription("*Les paramètres entre **`<>`** sont obligatoire, alors que les paramètres entre **`[]`** eux sont facultatifs*")
+			bot.setDescription("*Les paramètres entre **`<...>`** sont obligatoire, alors que les paramètres entre **`[...]`** eux sont facultatifs*")
 			if (5 <= perm) bot.addField(`\`${prefix}backup <emoji> <clear/create/list/load/remove>> <2/3/4: code>\``, "Permet de gérer les backup sur le bot")
 			if (4 <= perm) bot.addField(`\`${prefix}blacklist <add/clear/list/remove> <add/remove: membre>\``, "Permet de gérer les utilisateurs blacklist")
 			if (4 <= perm) bot.addField(`\`${prefix}blacklistrank <add/clear/list/remove> <add/remove: membre>\``, "Permet de gérer les utilisateurs blacklistrank")
