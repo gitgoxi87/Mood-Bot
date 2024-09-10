@@ -1,14 +1,14 @@
 {
     "color": "#FF0000",
     "prefix": "+",
-    "name": "[+] JTM | PROTECT",
+    "name": "[+] MOOD | PROTECT",
     "defaultjoinmessage": "{user} vient de rejoindre. Il a été invité par **{inviter:name}** qui a désormais **{invite} invitations** !",
     "defaultleavemessage": "{user} vient de quitter. Il avais été invité par **{inviter:name}** qui a désormais **{invite} invitations** ",
     "defaultLevelmessage": "**{user}** vient de passer au level **{level}** bravo à lui !",
     "owner": [
-        "836388976171810887", 
-        "775003587930488832",
-        "893892286201622528",
-        "399402184023867404"
+        "399402184023867404", 
+        "1260594639560249458",
+        "",
+        ""
     ]
 }
